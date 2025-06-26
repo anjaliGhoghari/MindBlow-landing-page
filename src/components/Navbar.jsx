@@ -10,7 +10,7 @@ export const Navbar = () => {
         <img src={logo} alt="logo" className="w-[120px] h-[32px]" />
       </a>
       <ul className="flex justify-end flex-1 items-center">
-        {navLinks.map((nav, index) => (
+        {navLinks.map((nav) => (
           <li
             key={nav.id}
             className="font-normal hidden sm:flex font-poppins mr-10 text-[16px] text-dimWhite hover:text-white cursor-pointer"
@@ -33,7 +33,7 @@ export const Navbar = () => {
         } p-6 bg-black-gradient absolute top-20 right-0 mx-4 rounded-xl my-2 min-w-[140px] sidebar`}
       >
         <ul className=" list-none flex justify-end flex-col flex-1 items-left">
-          {navLinks.map((nav, index) => (
+          {navLinks.map((nav) => (
             <li
               key={nav.id}
               className="font-normal flex font-poppins text-[16px] mb-4 text-dimWhite hover:text-white cursor-pointer"
