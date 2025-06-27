@@ -5,7 +5,7 @@ import { features } from "../constants";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div
-    className={`flex flex-row py-6 p-3 feature-card ${
+    className={`flex flex-row py-6 p-3 bg-black-gradient feature-card ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } rounded-[20px]`}
   >
@@ -24,7 +24,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const Bussiness = () => (
-  <section id="features" className={layout.section}>
+  <section id="features" className={`${layout.section}`}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
         You do the business, <br className="sm:block hidden" /> we’ll handle the

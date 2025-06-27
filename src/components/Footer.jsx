@@ -2,9 +2,7 @@ import { logo } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 import styles from "../style";
 const Footer = () => (
-  <section
-    className={`${styles.paddingY} flex-col justify-center items-center `}
-  >
+  <section className="pt-32 pb-4 flex-col justify-center items-center">
     <div className="flex justify-center items-start mb-8 flex-col md:flex-row ">
       <div className="flex flex-[1] justify-start flex-col mr-10">
         <img src={logo} className="w-[266px] h-[72.14px] object-contain" />

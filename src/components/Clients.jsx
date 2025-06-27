@@ -1,16 +1,16 @@
 import React from "react";
-
+import styles from "../style";
 import { clients } from "../constants";
 
 const Clients = () => (
   <section
-    className={` flex justify-center flex-col items-center mb-0  sm:mb-20`}
+    className={` ${styles.paddingY} flex justify-center flex-col items-center`}
   >
     <div className="flex justify-center items-center flex-wrap w-full">
       {clients.map((client) => (
         <div
           key={client.id}
-          className="flex justify-center items-center flex-1 m-5 sm:min-w-[192px] min-w-[120px] "
+          className="flex justify-center items-center flex-1 sm:min-w-[192px] m-4 min-w-[120px] "
         >
           <img
             src={client.logo}
